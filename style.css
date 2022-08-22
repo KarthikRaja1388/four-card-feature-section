@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(229, 6%, 66%, 0.5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 90%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3em 0;
+
+
+}
+header{
+    margin-bottom: 3em;
+}
+header h1{
+    font-size: 1.75rem;
+    text-align: center;
+}
+.title--light{
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+.title-bold{
+    color: hsl(234, 12%, 34%);
+}
+.header--desc{
+    text-align: center;
+    margin-top: 1em;
+    color: hsl(229, 6%, 66%);
+}
+
+.card{
+    flex: 1;
+    background-color: hsl(0, 0%, 98%);
+    padding: 1.5em;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.card img{
+    width: 4em;
+    align-self: flex-end;
+    margin-top: 2em;
+}
+.card--title{
+    color: hsl(234, 12%, 34%);
+}
+.card--desc{
+    color: hsl(229, 6%, 66%);
+}
+.supervisor{
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+.team-buider{
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+.karma{
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+.calculator{
+    border-top: 3px solid hsl(212, 86%, 64%);
+
+}
+
+
+@media all and (min-width:640px) {
+    .container{
+        width: 70%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header--desc{
+        width: 55ch;
+    }
+    .content-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr ;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    .card{
+        flex: 1;
+    }
+    .double-row{
+        display: flex;
+        flex-direction: column;
+        gap:1em;
+    } 
+}
